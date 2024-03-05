@@ -13,19 +13,8 @@ const gainsTrustWithTheUser: MentalProcess = async ({ step: initialStep }) => {
   speak(stream);
 
   const lastStep = await nextStep
-  // const shouldShout = await lastStep.compute(
-  //   mentalQuery("The interlocuter is being rude")
-  // )
-  // log("User attacked soul?", shouldShout)
-  // if (shouldShout) {
-  //   setNextProcess(shouts)
-  // }
-
+ 
  setNextProcess(assists);
-
-  // const shouldBeHuman = await lastStep.compute(
-  //   mentalQuery("Is the user a human?")
-  // )  
 
   return lastStep
 }
